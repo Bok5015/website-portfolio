@@ -1,0 +1,639 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+}
+body,html{
+    min-height: 100%;
+    background-color: #1c1b1d;
+    overflow-y: auto;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    font-weight: 700;
+    position: static;
+    width:auto;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.bar_name{
+    float:right;
+    text-align: center;
+    color: #f2efed;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.navbar img{
+    float:left;
+    width: 150px;
+    border-radius: 100px;
+    display:flex;
+}  
+
+li a:hover{
+    color:#4e3e3e;
+}
+.indexheader{
+    background-image: url(image/BG_CS_PV4_158.jpg);
+    background-size: 100%;
+    background-position:top;
+    background-repeat: no-repeat;
+    color:#fefefe;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 30px;
+    text-align: left;
+    display:flex;
+    justify-content: space-between;
+    position:relative;
+    font-weight: 100;
+    padding-top:6%;
+}
+#t{
+    margin-top: 8%;
+    margin-left: 5%;
+}
+.indexheader h2{
+    font-weight: 700;
+}
+.indexheader p1 img{
+    width:40px;
+    place-items: center;
+    margin-left: 45%;
+}
+.indexheader p2{
+    font-size:20px;
+    margin-top:30px;
+    font-weight: 400;
+}
+.indexheader p2 img{
+    width:30px;
+    place-items: center;
+    position:relative;
+}
+#mebutton{
+    cursor:pointer;
+    font-size: 20px;
+    border:transparent;
+    padding:5px 20px;
+    background-color: #2c4563;
+    color:#f3f5f7;
+    transform: skewX(-10deg);
+    font-weight: 600;
+    margin-top: 30px;
+    border-radius: 4px;
+}
+#mebutton:hover{
+    background-color:#1b2b3f ;
+}
+.profilepic{
+    width: 800px;
+    position: relative;
+    margin-right:5%;
+    border-radius: 50px;
+    margin-bottom: 15%;
+    margin-top:2%;
+}
+#context{
+    display:flex;
+    justify-content: center;
+    position:relative;
+    color:#f2efed;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+#context img{
+    margin-top:2%;
+    width:500px;
+    position:relative;
+    -moz-box-shadow: -20px 10px 10px #847869;
+    -webkit-box-shadow: -20px 10px 10px #847869;
+    box-shadow: -20px 10px 10px #847869;
+    border-radius: 50px;
+    margin-right:5%;
+}  
+.maincontext{
+    position:relative;
+    margin-top:10%;
+}
+.maincontext h1{
+    text-align: center;
+    margin:0;
+    font-size: 40px;
+}
+.maincontext p{
+    font-size: 22px;
+}
+.maincontext1 {
+    display:flex;
+    position:relative;
+    margin-top: 7%;
+    margin-bottom:8%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    justify-content: center;
+    gap:7em;
+    align-items: center;
+    transform: skewX(-2deg);
+    font-style: italic;
+}
+.maincontext1 img{
+    width:50px;
+    margin-bottom:3%
+}
+.maincontext1 a{
+    color:#b18c8d;
+    font-weight: 700;
+}
+#t1, #t2, #t3{
+    width:20em;
+    height:25em;
+    padding:10px 30px;
+    color:#b18c8d;
+    text-align:center;
+    background-color:#43444f;
+    box-shadow: 15px 15px 10px;
+    -moz-box-shadow:15px 15px 10px;
+    -webkit-box-shadow:15px 15px 10px;
+    border-radius: 20px;
+}
+#t1 ul{
+    list-style-type: number;
+    font-weight: 500;
+    display:inline-block;
+    text-align: left;
+}
+#t3 ul{
+    list-style-type: disc;
+    font-weight: 500;
+    display:inline-block;
+    text-align: left;
+}
+footer{
+    background-color:#191f28;
+    color:#ccccb5;
+    text-align:center;
+    font-size: 17px;
+    left:0;
+    right:0;
+    font-weight:700;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding:10px;
+    margin:0;
+    position: relative;
+}
+footer a{
+    justify-content: space-between;
+    color:#ccccb5;
+}
+.box img{
+    width:50px;
+}
+.box{
+    display: flex;
+    position:relative;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    gap:10em;
+    justify-content: center;
+    margin-top:5%;
+    margin-bottom:5%
+}
+#t_1, #t_2, #t_3{
+    text-align:center;
+    width:20em;
+    height:20em;
+    background-color: #4a5b6e;
+    border-radius: 40px;
+    padding:10px 30px;
+    color:#f5efee;
+    box-shadow: 0px 20px 10px #f8cdc6;
+    -moz-box-shadow:0px 20px 10px #f8cdc6;
+    -webkit-box-shadow:0px 20px 10px #f8cdc6;
+}
+.but{
+    background-color:#f8cdc6;
+    align-items: center;
+    cursor:pointer;
+    font-size: 15px;
+    font-weight: 550;
+    box-sizing: border-box;
+    border: transparent;
+    padding: 4px 10px;
+    border-radius: 20px;
+    text-decoration: none;
+}
+.but:hover{
+    background-color: #9ec1cc;
+}
+#t_3 img{
+    width:50px;
+    border-radius:30px;
+}
+#t_3{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+    position:relative;
+    margin-bottom: 5%;
+}
+#t_3box{
+    display:flex;
+    justify-content: center;
+}
+#skillheader{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color:#f2efed;
+    text-align: center;
+    font-size: 30px;
+    align-items: center;
+    position:relative;
+    margin-top: 2%;
+}
+.info{
+    margin-top: 5%;
+    margin-bottom: 5%;
+    display: flex;
+    position:relative;
+    justify-content: center;
+    text-align: center;
+    gap:15em;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+}
+#cssinfo, #jsinfo{
+    width:35em;
+    color:#f2efed
+}
+#cssinfo p, #jsinfo p{
+    font-size: 17px;
+}
+#cssinfo h1, #jsinfo h1{
+    font-size: 40px
+}
+.info img{
+    width:40px
+}
+.header1 {
+    color:#f2efed;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+.header1 p{
+    font-size: 20px;
+}
+.header1 h1{
+    font-size:50px ;
+}
+.table{
+    display: flex;
+    justify-content: center;
+}
+table{
+    color:white;
+    position:relative;
+    width:60%;
+    height:300px;
+    text-align: center;
+    margin-top: 3%;
+    margin-bottom: 3%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+td, th{
+    border-bottom: 3px solid white;
+    padding:20px
+}
+table{
+    border-collapse: collapse;
+}
+th{
+    font-size: 21px;
+}
+tfoot{
+    font-size: 17px;
+    font-weight: 600;
+}
+#jobinfo img{
+    width:100px
+}
+#jobinfo{
+    text-align: center;
+    color:#f2efed;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-top: 5%;
+    margin-left:25%;
+    margin-right: 25%;
+}
+#jobinfo h1{
+    font-size: 40px;
+}
+#jobinfo p{
+    font-size: 17px;
+    margin-bottom:5%;
+}
+@media screen and (max-width: 1024px){
+    .bar_name{
+        font-size:17px;
+        padding:18px;
+    }
+    .navbar img{
+        width:120px;
+    }
+    .indexheader{
+        font-size: 25px;
+    }
+    #t{
+        margin-top: 5%;
+    }
+    .indexheader p2{
+        font-size: 16px;
+    }
+    .indexheader p2 img{
+        width:20px;
+    }
+    .indexheader p1 img{
+        width:30px
+    }
+    .profilepic{
+        width:470px;
+        margin-top: 5%;
+    }
+    #context img{
+        width:300px;
+    }
+
+    .maincontext h1{
+        font-size: 30px;
+        margin-top: -4%;
+    }
+    .maincontext p{
+        font-size: 16px;
+    }
+    .maincontext1{
+        gap:3em;
+    }
+    .maincontext1 img{
+        width:40px;
+        margin-bottom: 3%;
+    }
+    .maincontext1 h1{
+        font-size: 25px;
+    }
+    #t1, #t2, #t3{
+        width:16em;
+        height:23em;
+    }
+    .header1{
+        margin-top: 4%;
+    }
+    table{
+        width:75%;
+    }
+    #jobinfo{
+        margin-left:20%;
+        margin-right: 20%;
+    }
+    #jobinfo p{
+        margin-bottom: 10%;
+    }
+    #skillheader{
+        font-size: 18px;
+    }
+    .box{
+        gap:7em;
+    }
+    #t_1, #t_2{
+        width:18em
+    }
+    #t_3{
+        width:18em;
+    }
+    .info{
+        gap:5em;
+    }
+    #cssinfo h1, #jsinfo h1{
+        font-size: 30px;
+    }
+    #cssinfo p, #jsinfo p{
+        font-size: 14px;
+    }
+    .info img{
+        width:30px
+    }
+}
+
+@media screen and (max-width:430px) {
+    .bar_name{
+        float:right;
+        font-size:10px;
+        padding:10px;
+    }
+    .navbar img{
+        float:left;
+        width:80px;
+    }
+    .indexheader{
+        font-size: 14px;
+        flex-direction: column;
+        text-align: center;
+        background-size: 250%;
+        background-position: 81% 0%;
+    }
+    #t{
+        margin-top:0%;
+        margin-left: 0%;
+    }
+    .indexheader p2{
+        font-size: 12px;
+    }
+    .indexheader p2 img{
+        width:20px;
+    }
+    .indexheader p1 img{
+        width:25px;
+        margin-left: 0%;
+    }
+    .profilepic{
+        width:400px;
+        margin-top: 5%;
+        margin-left:4%
+    }
+    #mebutton{
+        font-size: 12px;
+        padding:3px 15px;
+        margin-top: 20px;
+    }
+    #context{
+        flex-direction: column;
+    }
+    #context img{
+        width:300px;
+        margin-left: 18%;
+    }
+    .maincontext h1{
+        font-size:30px;
+        margin-top: -4%;
+    }
+    .maincontext p{
+        font-size: 17px;
+        text-align: center;
+    }
+    .maincontext1{
+        flex-direction: column;
+        transform: skewX(0deg);
+    }
+    .maincontext1 h1{
+        font-size: 23px;
+    }
+    .maincontext1 p{
+        font-size: 15px;
+    }
+    #t1, #t2, #t3{
+        height:23em;
+        width:20em;
+    }
+    .header1{
+        margin-top: 5%;
+    }
+    .header1 p{
+        font-size: 10px;
+    }
+    .header1 h1{
+        font-size:30px;
+        margin-top: -3%;
+    }
+    table{
+        width:100%;
+        margin-top: -3%;
+    }
+    th{
+        font-size: 13px;
+        padding:0px
+    }
+    td{
+        font-size: 10px;
+        padding:10px
+    }
+    #jobinfo{
+        margin-left:10%;
+        margin-right:10%;
+    }
+    #jobinfo h1{
+        font-size: 30px;
+    }
+    #jobinfo p{
+        margin-bottom: 10%;
+        font-size: 10px;
+    }
+    #jobinfo img{
+        width:90px
+    }
+    #skillheader{
+        font-size: 10px;
+    }
+    .box{
+        gap:2em;
+        flex-direction: column;
+        margin-left: 21.5%;
+    }
+    #t_1, #t_2, #t_3{
+        width:15em;
+        height:17em;
+    }
+    #t_3{
+        margin-top: 0.75em;
+    }
+    #t_1 h1, #t_2 h1, #t_3 h1{
+        font-size: 23px;
+    }
+    #t_1 img, #t_2 img, #t_3 img{
+        width:40px
+    }
+    #t_1 p, #t_2 p, #t_3 p{
+        font-size: 12px;
+    }
+    .info{
+        gap:0em;
+        flex-direction: column;
+        margin-top: 2%;
+        margin-bottom: 8%;
+        margin-left: 5%;
+    }
+    #cssinfo, #jsinfo{
+        width:24em
+    }
+    #cssinfo h1, #jsinfo h1{
+        font-size: 30px;
+    }
+    #cssinfo p, #jsinfo p{
+        font-size: 12px;
+    }
+    .info img{
+        width:30px
+    }
+    footer{
+        font-size: 12px;
+    }
+}
+@media screen and (max-width:425px){
+    .profilepic{
+        width:400px;
+        margin-top: 5%;
+        margin-left:2%
+    }
+    #context img{
+        margin-left: 15%;
+    }
+    .box{
+        margin-left: 89px;
+    }
+    .info{
+        margin-left: 4%;
+    }
+}
+@media screen and (max-width:375px){
+    .navbar img{
+        float:left;
+        width:77px;
+    }
+    .bar_name{
+        float:right;
+        font-size:8px;
+        padding:10px;
+    }
+    .profilepic{
+        width:375px;
+        margin-top: 5%;
+        margin-left:0%
+    }
+    .maincontext1{
+        flex-direction: column;
+        transform: skewX(0deg);
+    }
+    .maincontext1 h1{
+        font-size: 23px;
+    }
+    .maincontext1 p{
+        font-size: 15px;
+    }
+    #t1, #t2, #t3{
+        height:23em;
+        width:20em;
+    }
+    #context img{
+        margin-left: 12%;
+    }
+    .box{
+        margin-left: 17.5%;
+    }
+    .info{
+        margin-left: 0%;
+    }
+    #cssinfo, #jsinfo{
+        width:23em;
+    }
+}

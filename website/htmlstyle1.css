@@ -1,0 +1,73 @@
+*{
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+}
+body,html{
+    min-height:100%;
+    background-color: #b8a7aa;
+    background-size:100%;
+}
+.nav_bar ul{
+    list-style-type: none;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(image/wide\ josh\ hutcherson.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 100%;
+    overflow:hidden;
+    padding:20px;
+    margin:0px
+}
+.nav_bar a{
+    text-decoration: none;
+    color:white;
+    align-items: center;
+    text-align: center;
+    font-weight: 550;
+    font-size:20px;
+    padding: 50px
+}
+.nav_bar li{
+    float:left;
+}
+.nav_bar a:hover{
+    color:black
+}
+footer{
+    background-color:#262727;
+    color:#ffffff;
+    right:0;
+    left:0;
+    padding:10px;
+    font-family: Arial, Helvetica, sans-serif;
+    position:relative;
+    text-align: center;
+}
+header{
+    text-align: center;
+    margin-top:4%;
+    color:#ebe6ea;
+}
+header h1{
+    font-size: 50px;
+}
+header img{
+    width:600px;
+    border-radius: 100px;
+}
+main{
+    color:#ebe6ea; 
+    margin-bottom:5%;
+    margin-top:5%;
+    text-align: center;
+    margin-right:20%;
+    margin-left:20%;
+}
+main h1{
+    font-size: 40px;
+}
+main p{
+    font-size: 20px;
+}

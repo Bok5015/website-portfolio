@@ -1,0 +1,170 @@
+*{
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+body,html{
+    max-height: 100%;
+    background-image: url(image/lumine.jpg);
+    background-repeat: no-repeat;
+    background-size: 200% 100%;
+    background-position: center;
+    overflow-y: auto;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+}
+.navbar ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow:hidden;
+    font-weight: 700;
+    position: static;
+    width:auto;
+    background-color: #5b558b;
+}
+.bar_name{
+    float:right;
+    text-align: center;
+    color: #E3E4FA;
+    text-decoration: none;
+    font-size: 20px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+    margin-top: 8px;
+    overflow: hidden;
+}
+.navbar img{
+    float:left;
+    width: 150px;
+    border-radius: 100px;
+    display:flex;
+}  
+
+li a:hover{
+    color:#659EC7;
+}
+footer{
+    background-color:black;
+    color:white;
+    text-align:center;
+    font-size: 17px;
+    position: relative;
+    left:0;
+    right:0;
+    font-weight:700;
+    bottom:0;
+    margin:0;
+    padding:10px;
+    margin-top:-2%;
+}
+footer a{
+    justify-content: space-between;
+    color:white;
+    font-size: 20px;
+}
+.title{
+    text-align: center;
+    background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+    font-size: 80px;
+    position:relative;
+    margin-top: 5%;
+    margin-bottom:5%
+}
+#game{ 
+    display: grid;
+    place-items: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+:root{
+    --default: url(image/mikaxd.jpg);
+    --empty: #3a3a3c;
+    --wrong: #b59f3b;
+    --right:#538d4e;
+}
+.grid{
+    display:grid;
+    grid-template-rows:repeat(6,auto);
+    grid-template-columns: repeat(5, auto);
+}
+.box.default{
+    background:var(--default)
+}
+.box.empty {
+    background: var(--empty);
+}
+.box.wrong {
+    background: var(--wrong);
+}
+.box.right {
+    background:var(--right);
+}
+.animated {
+    animation: flip 0.5s ease;
+}
+@keyframes flip {
+    0% {
+        transform: scaleX(-1);
+    }
+    50% {
+        transform: scaleY(0);
+    }
+    100% {
+        transform:scaleX(1)
+    }
+}
+.box{
+    width:90px;
+    height:90px;
+    border:2px solid var(--empty);
+    margin:4px;
+    color:#9590e0;
+    text-transform: uppercase;
+    display: grid;
+    place-items: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 42px;  
+    background-image: var(--default);
+    background-size: 100px;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+#navbutton{
+    display:flex;
+    justify-content: center;
+    gap:2em;
+}
+button{
+    position:relative;
+    background-image: linear-gradient(to left, #FFBCD9, #FFD8F5, #FFF5FF);
+    color: #807378;
+    border:2px solid black;
+    font-size:16px;
+    font-weight:400;
+    text-align: center;
+    box-sizing: border-box;
+    cursor:pointer;
+    margin-bottom: 30%;
+}
+#guess{
+    padding: 4px 22px;
+}
+#restart{
+    padding:4px 4px;
+}
+#typebox{
+    position:relative;
+    text-align: center;
+    margin-bottom:20px;
+    display:flex;
+    justify-content: center;
+}
+#inputbox{
+    padding:5px 20px
+}
